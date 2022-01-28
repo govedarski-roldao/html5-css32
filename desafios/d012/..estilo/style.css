@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+#flowerBackground{
+    background-image: url(../imagens/background001.jpg); background-position: center right;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
+}
