@@ -67,6 +67,9 @@ section.normal {
     background-color: white;
     color: black;
 }
+section.normal p{
+    
+}
 
 section.imagem {
     background-color: rgba(54, 53, 53, 0.603);
@@ -93,11 +96,9 @@ section.imagem p {
 }
 
 
-
-
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px
+    padding: 10px;
 }
