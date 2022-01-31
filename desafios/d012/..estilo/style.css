@@ -66,33 +66,38 @@ section {
 section.normal {
     background-color: white;
     color: black;
-}
-section.normal p{
+    box-shadow:  10px 10px 17px 5px rgb(0 0 0 / 59%);
     
 }
 
 section.imagem {
     background-color: rgba(54, 53, 53, 0.603);
     color: white;
+    box-shadow: inset 6px 6px 20px 5px rgba(0, 0, 0, 0.493);
+    background-position: right center;   
+    background-attachment: fixed;
+    background-size: cover;
 
 }
+section p{
+    padding-bottom: 2em;
+}
 
-section#flowerbackground {
+#flowerbackground {
     background-image: url(../imagens/background001.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
 }
 
-section#listbackground {
+#listbackground {
     background-image: url(../imagens/background002.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
 }
 
 section.imagem p {
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.514);
     display: inline-block;
     padding: 5px;
+    text-shadow: 2px 1px 0px black;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.52);
+    
 }
 
 
