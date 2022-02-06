@@ -13,7 +13,8 @@
 
         table {
             border-collapse: collapse;
-            width: 650px;
+            width: 500px;
+            position:relative;
 
         }
 
@@ -23,14 +24,30 @@
             padding: 10px;
         }
 
-        thead,
-        tfoot {
+        thead, tfoot {
             background-color: gray;
             color: white;
-            
+        }
+        thead tr th {
+            position: sticky;
+            top: -1px;;
+            background-color: gray;
+        }
+        tbody tr:nth-child(odd){
+            background-color: cadetblue;
+        }
+        tbody tr:nth-child(even){
+            background-color: aquamarine;
+
         }
         .num{
             text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightblue;
         }
     </style>
 </head>
@@ -38,20 +55,22 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia de tabelas grandes
+        Caption
         THEAD
             TR, TD, TH
         TBODY
             TR, TD, TH
         TFOOT
-            TR, TD, TH
+            TR, TH, TD
     
     -->
     <table>
+        <Caption>População das unidades federativas</Caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>Percentagem</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 60px;">População</th>
+                <th scope="col" style="width: 60px;">Percentagem</th>
             </tr>
         </thead>
         <tbody>
@@ -194,7 +213,7 @@
         </tbody>
         <tfoot >
             <tr style="margin-bottom: 100px; ">
-                <th>Total</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
                 <td class="num"><strong>100%</strong></td>
 
